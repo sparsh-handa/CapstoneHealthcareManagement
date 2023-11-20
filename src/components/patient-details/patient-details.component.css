@@ -1,0 +1,105 @@
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 100px;
+  }
+  .card-title
+ {
+  font-size: 24px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight:bold;
+  color: #007acc;
+  margin-right: 150px;
+
+ }
+  
+  /* Style for navbar links */
+  .nav-link {
+    color: #000;
+  }
+  .list-group-item{
+    font-size: 18px;
+  }
+  
+  /* Style for active navbar links */
+  .nav-item.active .nav-link {
+    color: #007bff;
+  }
+  
+  /* Style for navbar links on hover */
+  .nav-link:hover {
+    color: #007bff;
+  }
+
+  .img{
+    height: 450px;
+    width: 450px;
+  }
+  
+#html{
+    background-color: red;
+}
+
+.how-section1 {
+    background-color: #f8f8f8;
+    padding: 40px 0;
+    margin-top: 50px;
+}
+
+.how-section1 .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.how-section1 h4 {
+    font-weight: bold;
+    font-size: 35px;
+    margin-top: 0;
+}
+
+.how-section1 .subheading {
+    font-size: 22px;
+    color: rgb(228, 142, 14);
+    margin-bottom: 20px;
+}
+
+.how-section1 p {
+    font-size: 16px;
+    margin-right: 20px;
+}
+.text-muted{
+    margin-right: 30px;
+}
+
+.how-section1 .img-fluid {
+    width: 80%;
+    margin-left: 60px;
+}
+
+#Details{
+    border: 3px solid red;
+}
+
+@media (max-width: 767px) {
+    .how-section1 .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .how-section1 .col-lg-6 {
+        padding: 0;
+    }
+}
+.how-section1 {
+    background-color: #fff; /* Set white background */
+    padding: 50px; /* Add padding for spacing */
+    margin-top: -20px; /* Remove top margin to avoid overlap */
+  }
+  
+  .card {
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add some border-radius for corner */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Add box-shadow for depth */
+  }
+
+  

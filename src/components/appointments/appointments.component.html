@@ -1,0 +1,23 @@
+
+<h2 class="head">YOUR APPOINTMENTS</h2>
+<div class="d-flex justify-content-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8" *ngFor="let appointment of appointments">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-header">
+            <h4 class="my-0 font-weight-normal">{{ appointment.doctorName }}</h4>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Symptoms : <span style="text-transform: uppercase;">{{ appointment.symptoms }}</span></li>
+              <li>Slot : {{ appointment.slot}}</li>
+              <li>Date : {{ appointment.date }}</li>
+              <li>Email : {{ appointment.email }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

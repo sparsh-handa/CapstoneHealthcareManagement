@@ -1,0 +1,45 @@
+
+<button class="btn btn-primary mt-3" (click)="openDialog()">Add Patient Medical History</button>
+<div class="how-section1">
+  <div class="card">
+    <div class="card-body">
+      <div class="row">
+    
+        <div class="col-md-8">
+          <h5 class="card-title mb-4">Medical Records</h5>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <span class="font-weight-bold mr-2">Disease:</span>
+              <span style="text-transform: uppercase; " class="fields">{{ medicalRecords?.data[0]?.disease }}</span>
+            </li>
+            <li class="list-group-item">
+              <span class="font-weight-bold mr-2">Blood Group:</span>
+              <span style="text-transform: uppercase" class="fields">{{ medicalRecords?.data[0]?.bloodGroup }}</span>
+            </li>
+            <li class="list-group-item">
+              <span class="font-weight-bold mr-2">Medication:</span>
+              <span style="text-transform: uppercase" class="fields"> {{ medicalRecords?.data[0]?.medication }}</span>
+            </li>
+            <li class="list-group-item">
+              <span class="font-weight-bold mr-2">Vaccinations:</span>
+              <span style="text-transform: uppercase"class="fields">{{ medicalRecords?.data[0]?.vaccinations }}</span>
+            </li>
+            <li class="list-group-item">
+              <span class="font-weight-bold mr-2">Surgeries:</span>
+              <span style="text-transform: uppercase"class="fields">{{ medicalRecords?.data[0]?.surgeries }}</span>
+            </li>
+            <li class="list-group-item">
+              <span class="font-weight-bold mr-2">Allergy:</span>
+              <span style="text-transform: uppercase"class="fields">{{ medicalRecords?.data[0]?.allergy }}</span>
+            </li>
+            <li class="list-group-item">
+              <span class="font-weight-bold mr-2">Lifestyle:</span>
+              <span style="text-transform: uppercase"class="fields">{{ medicalRecords?.data[0]?.lifestyle }}</span>
+            </li>
+          </ul>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

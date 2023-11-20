@@ -1,0 +1,16 @@
+.img-fluid {
+    /* width: 80%; */
+    height: 250px;
+    width: 250px;
+    margin-left: 60px;
+}
+h5{
+    font-size: 28px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight:bold;
+  color: #007acc;
+  margin-right: 150px;
+}
+.card{
+    margin-top: 50px;
+}

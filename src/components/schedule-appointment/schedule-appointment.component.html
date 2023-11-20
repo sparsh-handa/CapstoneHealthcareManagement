@@ -1,0 +1,48 @@
+<p>BOOKING FORM</p>
+<div mat-dialog-content>
+
+    <form [formGroup]="appointmentForm" (ngSubmit)="onSubmit()" (keydown.enter)="$event.preventDefault()">
+      <!-- <mat-form-field>
+        <input matInput formControlName="patientId" placeholder="Patient Id">
+        <mat-error *ngIf="appointmentForm.get('patientId')?.hasError('patientId')">Patient Id is required</mat-error>
+      </mat-form-field>
+   -->
+      <mat-form-field>
+        <input matInput formControlName="doctorName" placeholder="Doctor Name">
+        <mat-error *ngIf="appointmentForm.get('doctorName')?.hasError('required')">Doctor Name is required</mat-error>
+      </mat-form-field>
+   
+      <mat-form-field>
+        <input matInput formControlName="symptoms" placeholder="Symptoms">
+        <mat-error *ngIf="appointmentForm.get('symptoms')?.hasError('required')">Symptoms is required</mat-error>
+      </mat-form-field>
+   
+      <mat-form-field>
+        <input matInput formControlName="date" type="date" placeholder="Date">
+        <mat-error *ngIf="appointmentForm.get('date')?.hasError('required')">Date is required</mat-error>
+      </mat-form-field>
+
+      <!-- <input type="datetim"> -->
+   
+      <mat-form-field>
+        <input matInput formControlName="slot" placeholder="Slot">
+        <mat-error *ngIf="appointmentForm.get('slot')?.hasError('required')">Slot is required</mat-error>
+      </mat-form-field>
+   
+      <mat-form-field>
+        <input matInput formControlName="email" placeholder="Email">
+        <mat-error *ngIf="appointmentForm.get('email')?.hasError('required')">Email is required</mat-error>
+      </mat-form-field>
+  
+    </form> 
+
+     <div mat-dialog-actions>
+        <button mat-raised-button type="submit" color="primary" [disabled]="appointmentForm.invalid" (click)="onSubmit()">Add</button>
+        <button mat-raised-button mat-dialog-close color="warn">Cancel</button>
+      </div>
+   
+    
+   
+  </div>
+  
+  

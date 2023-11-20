@@ -1,0 +1,59 @@
+<h1 mat-dialog-title>ADD PATIENT DETAILS</h1>
+
+
+<div mat-dialog-content>
+
+  <form [formGroup]="medicalForm" (ngSubmit)="onSubmit()" (keydown.enter)="$event.preventDefault()">
+    <!-- <mat-form-field>
+      <input matInput formControlName="patientId" placeholder="Patient Id">
+      <mat-error *ngIf="medicalForm.get('patientId')?.hasError('patientId')">Patient Id is required</mat-error>
+    </mat-form-field> -->
+
+    <mat-form-field>
+      <input matInput formControlName="doctorName" placeholder="Doctor Name">
+      <mat-error *ngIf="medicalForm.get('dotorName')?.hasError('required')">Doctor Name is required</mat-error>
+    </mat-form-field>
+ 
+    <mat-form-field>
+      <input matInput formControlName="disease" placeholder="Disease Name">
+      <mat-error *ngIf="medicalForm.get('disease')?.hasError('required')">Disease is required</mat-error>
+    </mat-form-field>
+ 
+    <mat-form-field>
+      <input matInput formControlName="bloodGroup" placeholder="Blood Group">
+      <mat-error *ngIf="medicalForm.get('bloodGroup')?.hasError('required')">Blood Group is required</mat-error>
+    </mat-form-field>
+ 
+    <mat-form-field>
+      <input matInput formControlName="medication" placeholder="Medications">
+      <mat-error *ngIf="medicalForm.get('medication')?.hasError('required')">Medications required</mat-error>
+    </mat-form-field>
+ 
+    <mat-form-field>
+      <input matInput formControlName="surgeries" placeholder="Number of Surgeries">
+      <mat-error *ngIf="medicalForm.get('surgeries')?.hasError('required')">Total Sugeries required</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="allergy" placeholder="Any particular allergy">
+      <mat-error *ngIf="medicalForm.get('allergy')?.hasError('required')">Required</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput formControlName="vaccinations" placeholder="Total vaccinations done">
+      <mat-error *ngIf="medicalForm.get('vaccinations')?.hasError('required')">Required</mat-error>
+    </mat-form-field>
+    
+    <mat-form-field>
+      <input matInput formControlName="lifestyle" placeholder="Lifestyle Details">
+      <mat-error *ngIf="medicalForm.get('lifestyle')?.hasError('required')">Required</mat-error>
+    </mat-form-field>
+    
+
+  </form>
+ 
+  <div mat-dialog-actions id="btn1">
+    <button mat-raised-button id="buttn" type="submit" color="primary" [disabled]="medicalForm.invalid" (click)="onSubmit()">Add</button>
+    <button mat-raised-button id="buttn" mat-dialog-close color="warn">Cancel</button>
+  </div>
+ 
+</div>
+

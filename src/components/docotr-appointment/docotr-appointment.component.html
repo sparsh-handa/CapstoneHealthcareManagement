@@ -1,0 +1,10 @@
+<h2>Appointments with {{ doctorName }}</h2>
+
+<div class="card" *ngFor="let appointment of appointments">
+  <div class="card-body">
+    <h5 class="card-title">{{ appointment.patientName }}</h5>
+    <p class="card-text">{{ appointment.slot }} at {{ appointment.date }}</p>
+    <p class="card-text">{{ appointment.symptoms }}</p>
+    <p class="card-text">{{ appointment.doctorName }}</p>
+  </div>
+</div>

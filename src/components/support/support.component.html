@@ -1,0 +1,29 @@
+<img src="/assets/img/images2.jpeg" class="img">
+
+<div class="container-fluid main-container-width-with-header" style="margin-top: 62px">
+
+  <div class="row">
+
+    <div class="col-md-6">
+      <h5>Connect with Peer</h5>
+
+
+      <span>Enter PeerId: <br>{{peerId}}</span>
+      <div style="width: 400px; height: 300px; border: 2px solid" id="remote-video">
+      <br><br></div>
+
+        <br>
+              <div class="col-md-12" id="buttons" style="text-align: right">
+        <input type="text" placeholder="Peer Id" [(ngModel)]='peerIdShare' />
+        <br>
+        <button class="button" (click)="connectWithPeer()">Call Peer</button>
+        <button class="button" (click)="screenShare()">Screen share</button>
+      </div>
+    
+     
+    </div>
+    
+   
+  </div>
+  
+</div>

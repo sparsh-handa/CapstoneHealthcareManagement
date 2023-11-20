@@ -1,0 +1,40 @@
+<!-- <div class="card-container">
+    <div class="d-flex flex-wrap doctors-container">
+      <div class="" *ngFor="let row of doctorsDisplayed">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title new">{{ row.doctorName }}</h5>
+            <ul class="list-unstyled">
+              <li>Specialization:{{ row.specialization }}</li>
+              <li>Experience:{{ row.experience }}</li>
+              <li>Email: {{ row.email }}</li>
+            </ul>
+            <button  (click)="openDialog()">Book Appointment!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div> -->
+  <div class="card-container">
+    <table class="table doctors-table">
+      <thead>
+        <tr>
+          <th>Doctor Name</th>
+          <th>Specialization</th>
+          <th>Experience</th>
+          <th>Email</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of doctorsDisplayed">
+          <td>{{ row.doctorName }}</td>
+          <td>{{ row.specialization }}</td>
+          <td>{{ row.experience }}</td>
+          <td>{{ row.email }}</td>
+          <td><button (click)="openDialog()">Book Appointment!</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>

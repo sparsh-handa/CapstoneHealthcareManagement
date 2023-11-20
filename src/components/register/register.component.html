@@ -1,0 +1,86 @@
+
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-body">
+            <h1 class="card-title text-center mb-5">Signup</h1>
+            <form>
+              <div class="row">
+                <!-- Left Column -->
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="userName">User Name:</label>
+                    <input type="text" id="userName" name="patientName" [(ngModel)]="patientName" class="form-control" required>
+                    <div class="invalid-feedback">Please enter a username</div>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" [(ngModel)]="email" class="form-control" required>
+                    <div class="invalid-feedback">Please enter a valid email address</div>
+                  </div>
+                </div>
+                <!-- Right Column -->
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" [(ngModel)]="password" class="form-control" required>
+                    <div class="invalid-feedback">Please enter a password</div>
+                  </div>
+                  <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" [(ngModel)]="dob" class="form-control" required>
+                    <div class="invalid-feedback">Please enter a valid date of birth</div>
+                  </div>
+                </div>
+              </div>
+  
+              <div class="row">
+                <!-- Left Column -->
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" [(ngModel)]="age" min="0" max="200" class="form-control" required>
+                    <div class="invalid-feedback">Please enter a valid age</div>
+                  </div>
+                  <div class="form-group">
+                    <label for="sex">Sex:</label>
+                    <select id="sex" name="sex" [(ngModel)]="sex" class="form-control" required>
+                      <option value="" selected>Choose...</option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                      <option value="other">Other</option>
+                    </select>
+                    <div class="invalid-feedback">Please select a gender</div>
+                  </div>
+                </div>
+                <!-- Right Column -->
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="contact">Phone:</label>
+                    <input type="tel" id="contact" name="contact" [(ngModel)]="contact" class="form-control" required>
+                    <div class="invalid-feedback">Please enter a valid phone number</div>
+                  </div>
+                  <div class="form-group">
+                    <label for="bloodGroup">Blood Group:</label>
+                    <select id="text" id="bloodGroup" name="bloodGroup" [(ngModel)]="bloodGroup" class="form-control">
+                      <option value="" selected>Choose...</option>
+                      <option value="male">A</option>
+                      <option value="female">B</option>
+                      <option value="other">O</option>
+                      <option value="other">AB</option>
+                    </select>
+                    <div class="invalid-feedback">Please enter a blood group</div>
+                  </div>
+                </div>
+              </div>
+  
+              
+              <button type="button" (click)="signup()" class="btn btn-lg btn-primary btn-block mt-5">Register
+                <a routerLink="/login"></a></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
